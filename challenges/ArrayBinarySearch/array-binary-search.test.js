@@ -15,9 +15,15 @@ describe('Binary Search', () => {
     expect(3).toEqual(3);
   });
 
-  it('should work on arrays of any size', () => {
+  it('should work on small arrays', () => {
     expect(binarySearch(arraySecond, 15)).toBe(14);
+  });
+
+  it('should work on medium arrays', () => {
     expect(binarySearch(arrayFourth, 452)).toBe(451);
+  });
+
+  it('should work on large arrays', () => {
     expect(binarySearch(arrayFifth, 999999)).toBe(999998);
   });
 
