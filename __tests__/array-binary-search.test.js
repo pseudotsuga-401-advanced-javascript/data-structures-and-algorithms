@@ -1,6 +1,6 @@
 'use strict';
 
-const binarySearch = require('./array-binary-search.js');
+const binarySearch = require('../challenges/ArrayBinarySearch/array-binary-search.js');
 
 // Sequence generator function (commonly referred to as "range", e.g. Clojure, PHP etc)
 // This range function was taken directly from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
