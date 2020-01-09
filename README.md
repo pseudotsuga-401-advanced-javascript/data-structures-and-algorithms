@@ -2,6 +2,7 @@
 
 ## [Array Reversal](#Reverse-Array)
 ## [Array Shift](#Shift-Array)
+## [Array Binary Search](#Binary-Search-Array)
 
 # Reverse Array
 
@@ -42,3 +43,21 @@ After that the program loops through the array provided in the function paramete
 ## Solution
 
 ![Whiteboard Image for Array Shift Challenge](assets/arrayshift-whiteboard.jpg)
+
+# Binary Search Array
+
+(CHALLENGE SUMMARY AND NOTES HERE)
+
+## [Code](./challenges/ArrayBinarySearch/array-binary-search.js)
+## [Tests](./challenges/ArrayBinarySearch/array-binary-search.test.js)
+
+## Challenge
+
+Write a function called binarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Approach and Efficiency 
+
+
+## Solution
+
+![Whiteboard Image for Array Binary Search Challenge](UPLOAD IMAGES AND LINK HERE)
