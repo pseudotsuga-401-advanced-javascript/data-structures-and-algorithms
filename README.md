@@ -1,3 +1,7 @@
+# README
+
+[Travis - CI](https://travis-ci.com/pseudotsuga-401-advanced-javascript/data-structures-and-algorithms)
+
 # Table of Contents
 
 ## [Array Reversal](#Reverse-Array)
