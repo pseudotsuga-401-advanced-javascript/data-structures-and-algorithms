@@ -6,6 +6,10 @@
 
 # Reverse Array
 
+## Teammate
+
+- Lindsey Peltier
+
 For our first coding challenge of code 401 we have been tasked to accept an inputted array of numbers and then return an a new array of the same numbers with in reverse order. We have also been asked to do this without access to any of the built-in Array Methods of ES6. 
 
 ## [Code](./challenges/ArrayReverse/array-reverse.js)
@@ -25,6 +29,8 @@ We took the approach of declaring a counter to represent the number of array ele
 
 
 # Shift Array
+
+- Lindsey Peltier
 
 This challenge also involved array manipulation. In contrast to the previous challenge it requires insertion and removal of an array element as opposed to rearrangement. 
 
@@ -46,10 +52,15 @@ After that the program loops through the array provided in the function paramete
 
 # Binary Search Array
 
-(CHALLENGE SUMMARY AND NOTES HERE)
+## Teammates
+
+- Natalie Alway
+- Trevor Thomphson
+
+Sorting algorithms are very satisfying to code. Binary search is a method of searching that looks at the middle of a sorted array, discards the half where a target value cannot lie, and repeats this process until the final position of the target array value can be returned. 
 
 ## [Code](./challenges/ArrayBinarySearch/array-binary-search.js)
-## [Tests](./challenges/ArrayBinarySearch/array-binary-search.test.js)
+## [Tests](./__tests__/array-binary-search.test.js)
 
 ## Challenge
 
@@ -57,7 +68,14 @@ Write a function called binarySearch which takes in 2 parameters: a sorted array
 
 ## Approach and Efficiency 
 
+We first divide the length of the array by two and round down to find the middle index. Whatever value lies here is compared to our target and then one of three cases occurs:
+1. The middle value equals the target and its index is returned.
+2. The middle value is less than the target so the left boundary is reassigned to the index value of the middle element. 
+3. The middle value is greater than the target and the right boundary is reassigned to the index value of the middle element.
+
+All of this occurs inside of a while loop as insurance in case the target value is not within the sorted array. If this proves to be true the while loop will end, and the value -1 will be returned.
 
 ## Solution
 
-![Whiteboard Image for Array Binary Search Challenge](UPLOAD IMAGES AND LINK HERE)
+![Whiteboard Image for Array Binary Search Challenge](./assets/array-binary-sort-1.jpg)
+![Whiteboard Image for Array Binary Search Challenge](./assets/array-binary-sort-2.jpg)
