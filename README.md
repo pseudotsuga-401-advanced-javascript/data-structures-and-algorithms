@@ -1,5 +1,5 @@
 # README
-
+<!-- TODO: Split readme into modules -->
 [Travis - CI](https://travis-ci.com/pseudotsuga-401-advanced-javascript/data-structures-and-algorithms)
 
 # Table of Contents
@@ -7,6 +7,7 @@
 ## [Array Reversal](#Reverse-Array)
 ## [Array Shift](#Shift-Array)
 ## [Array Binary Search](#Binary-Search-Array)
+## [Linked List](#Linked-List)
 
 # Reverse Array
 
@@ -83,3 +84,23 @@ All of this occurs inside of a while loop as insurance in case the target value 
 
 ![Whiteboard Image for Array Binary Search Challenge](./assets/array-binary-sort-1.jpg)
 ![Whiteboard Image for Array Binary Search Challenge](./assets/array-binary-sort-2.jpg)
+
+# Linked List
+
+<!-- TODO: Update -->
+For our first coding challenge of code 401 we have been tasked to accept an inputted array of numbers and then return an a new array of the same numbers with in reverse order. We have also been asked to do this without access to any of the built-in Array Methods of ES6. 
+
+## [Code](./challenges/linkedList/linked-list.js)
+
+## Challenge
+
+Implement a linked list data structure in JavaScript. 
+
+## Approach and Efficiency 
+<!-- TODO: Update for linked lists-->
+We took the approach of declaring a counter to represent the number of array elements we visited while also decrementing a for loop so that the last element of the source array would be transposed to the first index position of the new array and so on for the length of the array. I believe time complexity should be O(n) or linear time. This is a guess after some quick reading and I am still uncertain as to how to calculate space complexity.  
+
+## Solution
+<!-- TODO: Add UML Images Here -->
+<!-- ![Whiteboard Image 1](./assets/arrayreverse-whiteboard.jpg) -->
+<!-- ![Whiteboard Image 2](./assets/arrayreverse-whiteboard2.jpg) -->
