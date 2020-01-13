@@ -28,8 +28,8 @@ We took the approach of declaring a counter to represent the number of array ele
 
 ## Solution
 
-![Whiteboard Image 1](assets/IMG_20200106_160449.jpg)
-![Whiteboard Image 2](assets/IMG_20200106_162900.jpg)
+![Whiteboard Image 1](./assets/arrayreverse-whiteboard.jpg)
+![Whiteboard Image 2](./assets/arrayreverse-whiteboard2.jpg)
 
 
 # Shift Array
