@@ -15,5 +15,9 @@ describe('Stack functionality', () => {
     stack.push({lookhere: 'hello!'});
     expect(stack.top.value.lookhere).toBe('hello!');
   });
+  test('can successfully pop off the stack', () => {
+    stack.pop();
+    expect(stack.top.value).toBe(2);
+  });
 });
 
