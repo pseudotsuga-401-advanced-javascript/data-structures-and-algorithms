@@ -30,7 +30,8 @@ describe('Stack functionality', () => {
   });
   test('can successfully instantiate an empty stack', () => {
     let emptyStack = new Stack;
-    expect(emptyStack.top).toBe(null);
+    expect(emptyStack).toBeDefined();
+    expect(emptyStack).toHaveProperty('top', null);
   });
 });
 
@@ -60,7 +61,7 @@ describe('Queue functionality', () => {
   test('can successfully instantiate an empty queue', () => {
     let newQueue = new Queue;
     expect(newQueue).toBeDefined();
-    expect(newQueue).toHaveProperty('front');
-    expect(newQueue).toHaveProperty('rear');
+    expect(newQueue).toHaveProperty('front', null);
+    expect(newQueue).toHaveProperty('rear', null);
   });
 });
