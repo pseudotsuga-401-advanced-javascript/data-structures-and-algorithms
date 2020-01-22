@@ -37,8 +37,14 @@ class Queue {
   }
   enqueue(value){
     let node = new Node(value);
-    this.rear.next = node;
-    this.rear = node;
+    if(!this.rear){
+      this.front = node;
+      this.rear = node;
+    }
+    else{
+      this.rear.next = node;
+      this.rear = node;
+    }
   }
   dequeue(){
     let temp = this.front;

@@ -24,5 +24,19 @@ describe('Stack functionality', () => {
     stack.pop();
     expect(stack.top).toEqual(null);
   });
+  test('can successfully peek the next item on the stack', () => {
+    stack.push(1);
+    expect(stack.peek()).toHaveProperty('value', 1);
+  });
+  test('can successfully instantiate an empty stack', () => {
+    let emptyStack = new Stack;
+    expect(emptyStack.top).toBe(null);
+  });
 });
 
+describe('Queue functionality', () => {
+  test('can successfully enqueue into a queue', () => {
+    queue.enqueue(1);
+    expect(queue.rear.value).toEqual(1);
+  });
+})
