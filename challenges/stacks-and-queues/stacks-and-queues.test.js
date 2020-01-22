@@ -19,5 +19,10 @@ describe('Stack functionality', () => {
     stack.pop();
     expect(stack.top.value).toBe(2);
   });
+  test('can successfully empty a stack after multiple pops', () => {
+    stack.pop();
+    stack.pop();
+    expect(stack.top).toEqual(null);
+  });
 });
 
