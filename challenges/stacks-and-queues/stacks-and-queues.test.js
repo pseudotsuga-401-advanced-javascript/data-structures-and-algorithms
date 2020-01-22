@@ -39,4 +39,14 @@ describe('Queue functionality', () => {
     queue.enqueue(1);
     expect(queue.rear.value).toEqual(1);
   });
-})
+  test('can successfully enqueue multiple values into a queue', () => {
+    queue.enqueue(2);
+    queue.enqueue(3);
+    expect(queue.front.next.value).toBe(2);
+    expect(queue.rear.value).toBe(3);
+  });
+  test('can successfully dequeue out of a queue the expected value', () =>{
+    queue.dequeue();
+    expect(queue.front.value).toBe(2);
+  });
+});
