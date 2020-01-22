@@ -1,6 +1,6 @@
 'use strict';
 
-const {Node, Stack, Queue} = require('./stacks-and-queues.js');
+const {Stack, Queue} = require('./stacks-and-queues.js');
 const stack = new Stack;
 const queue = new Queue;
 
@@ -48,5 +48,19 @@ describe('Queue functionality', () => {
   test('can successfully dequeue out of a queue the expected value', () =>{
     queue.dequeue();
     expect(queue.front.value).toBe(2);
+  });
+  test('can successfully peek into a queue and see the expected value', () => {
+    expect(queue.peek()).toHaveProperty('value', 2);
+  });
+  test('can successfully empty a queue after multiple dequeues', () => {
+    queue.dequeue();
+    queue.dequeue();
+    expect(queue.front).toBe(null);
+  });
+  test('can successfully instantiate an empty queue', () => {
+    let newQueue = new Queue;
+    expect(newQueue).toBeDefined();
+    expect(newQueue).toHaveProperty('front');
+    expect(newQueue).toHaveProperty('rear');
   });
 });
