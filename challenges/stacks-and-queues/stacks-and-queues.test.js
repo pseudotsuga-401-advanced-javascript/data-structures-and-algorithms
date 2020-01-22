@@ -33,6 +33,8 @@ describe('Stack functionality', () => {
     expect(emptyStack).toBeDefined();
     expect(emptyStack).toHaveProperty('top', null);
     expect(emptyStack.isEmpty()).toBeTruthy();
+    emptyStack.push(1);
+    expect(emptyStack.isEmpty()).toBeFalsy();
   });
 });
 
@@ -65,5 +67,7 @@ describe('Queue functionality', () => {
     expect(newQueue).toHaveProperty('front', null);
     expect(newQueue).toHaveProperty('rear', null);
     expect(newQueue.isEmpty()).toBeTruthy();
+    newQueue.enqueue(1);
+    expect(newQueue.isEmpty()).toBeFalsy();
   });
 });
