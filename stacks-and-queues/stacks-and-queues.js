@@ -9,7 +9,7 @@ class Node {
 
 class Stack {
   constructor(top = null){
-    this.top = top
+    this.top = top;
   }
   peek(){
     return this.top;
@@ -27,5 +27,29 @@ class Stack {
   }
   isEmpty(){
     this.top === null ? true : false;
+  }
+}
+
+class Queue {
+  constructor(front = null, rear = null){
+    this.front = front;
+    this.rear = rear;
+  }
+  enqueue(value){
+    let node = new Node(value);
+    this.rear.next = node;
+    this.rear = node;
+  }
+  dequeue(){
+    let temp = this.front;
+    this.front = this.front.next;
+    temp.next = null;
+    return temp;
+  }
+  peek(){
+    return this.front;
+  }
+  isEmpty(){
+    this.front ? true : false;
   }
 }
