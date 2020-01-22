@@ -26,7 +26,12 @@ class Stack {
     this.top = node;
   }
   isEmpty(){
-    this.top === null ? true : false;
+    if(!!this.top){
+      return false;
+    }
+    else{
+      return true;
+    }
   }
 }
 
@@ -56,7 +61,12 @@ class Queue {
     return this.front;
   }
   isEmpty(){
-    this.front ? true : false;
+    if(this.front){
+      return false;
+    }
+    else{
+      return true;
+    }
   }
 }
 
