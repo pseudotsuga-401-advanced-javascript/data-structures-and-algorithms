@@ -61,7 +61,7 @@ class Queue {
     return this.front;
   }
   isEmpty(){
-    if(this.front){
+    if(!!this.front){
       return false;
     }
     else{
