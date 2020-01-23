@@ -8,7 +8,7 @@
 ## [Array Shift](#Shift-Array)
 ## [Array Binary Search](#Binary-Search-Array)
 ## [Linked List](#Linked-List)
-
+## [Stacks and Queues](#Stacks-and-Queues)
 # Reverse Array
 
 ## Teammate
@@ -104,3 +104,33 @@ We took the approach of declaring a counter to represent the number of array ele
 <!-- TODO: Add UML Images Here -->
 <!-- ![Whiteboard Image 1](./assets/arrayreverse-whiteboard.jpg) -->
 <!-- ![Whiteboard Image 2](./assets/arrayreverse-whiteboard2.jpg) -->
+
+# Stacks and Queues
+Stacks and Queues are each data structures with unique properties and thus are suited to unique challenges. You can find my complete write-up [here](https://github.com/pseudotsuga-401-advanced-javascript/bend-javascript-401d3/wiki/Discussion-Write-Ups:-Stacks-and-Queues).
+
+## Challenge
+Implement both a stack and queue data structure in JavaScript. 
+
+## Approach & Efficiency
+I don't believe this provided category is relevant to this particular challenge. I welcome comments to the contrary if they can be reasonably supported. 
+
+## API
+### Stack Methods:
+- ```peek()```:
+  - This method takes no parameters and returns the node at the top position of the stack if one exists. It does not mutate the stack. 
+- ```pop()```:
+  - This method takes no parameters. It removes the top node from the stack and then returns it. That order of operations is critical for garbage collection.
+- ```push(<value>)```: 
+  - This method takes a value as a parameter, instantiates a node with that value, and then places that node onto the top position of the stack. It returns undefined. 
+- ```isEmpty()```:
+  - This method takes no parameters and returns a boolean value representing whether or not the stack contains any nodes. 
+
+### Queue Methods
+- ```enqueue(<value>)```:
+  - This method takes a value as a parameter, instantiates a node with that value, and then places that node at the rear of the queue. In the case of an empty queue the front property will also be pointed to the newly instantiated node. 
+- ```dequeue()```:
+  - This method takes no parameters. It removes the node at the front position of the queue and returns it. 
+- ```peek()```:
+  - This method takes no parameters. It returns the node at the front position of the queue without removing it from the queue. 
+- ```isEmpty()```:
+  - This method takes no parameters and returns a boolean representing if the queue contains any nodes. 
