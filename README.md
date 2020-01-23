@@ -1,5 +1,5 @@
 # README
-<!-- TODO: Split readme into modules -->
+
 [Travis - CI](https://travis-ci.com/pseudotsuga-401-advanced-javascript/data-structures-and-algorithms)
 
 # Table of Contents
@@ -7,8 +7,7 @@
 ## [Array Reversal](#Reverse-Array)
 ## [Array Shift](#Shift-Array)
 ## [Array Binary Search](#Binary-Search-Array)
-## [Linked List](#Linked-List)
-## [Stacks and Queues](#Stacks-and-Queues)
+
 # Reverse Array
 
 ## Teammate
@@ -29,8 +28,8 @@ We took the approach of declaring a counter to represent the number of array ele
 
 ## Solution
 
-![Whiteboard Image 1](./assets/arrayreverse-whiteboard.jpg)
-![Whiteboard Image 2](./assets/arrayreverse-whiteboard2.jpg)
+![Whiteboard Image 1](assets/IMG_20200106_160449.jpg)
+![Whiteboard Image 2](assets/IMG_20200106_162900.jpg)
 
 
 # Shift Array
@@ -84,53 +83,3 @@ All of this occurs inside of a while loop as insurance in case the target value 
 
 ![Whiteboard Image for Array Binary Search Challenge](./assets/array-binary-sort-1.jpg)
 ![Whiteboard Image for Array Binary Search Challenge](./assets/array-binary-sort-2.jpg)
-
-# Linked List
-
-<!-- TODO: Update -->
-For our first coding challenge of code 401 we have been tasked to accept an inputted array of numbers and then return an a new array of the same numbers with in reverse order. We have also been asked to do this without access to any of the built-in Array Methods of ES6. 
-
-## [Code](./challenges/linkedList/linked-list.js)
-
-## Challenge
-
-Implement a linked list data structure in JavaScript. 
-
-## Approach and Efficiency 
-<!-- TODO: Update for linked lists-->
-We took the approach of declaring a counter to represent the number of array elements we visited while also decrementing a for loop so that the last element of the source array would be transposed to the first index position of the new array and so on for the length of the array. I believe time complexity should be O(n) or linear time. This is a guess after some quick reading and I am still uncertain as to how to calculate space complexity.  
-
-## Solution
-<!-- TODO: Add UML Images Here -->
-<!-- ![Whiteboard Image 1](./assets/arrayreverse-whiteboard.jpg) -->
-<!-- ![Whiteboard Image 2](./assets/arrayreverse-whiteboard2.jpg) -->
-
-# Stacks and Queues
-Stacks and Queues are each data structures with unique properties and thus are suited to unique challenges. You can find my complete write-up [here](https://github.com/pseudotsuga-401-advanced-javascript/bend-javascript-401d3/wiki/Discussion-Write-Ups:-Stacks-and-Queues).
-
-## Challenge
-Implement both a stack and queue data structure in JavaScript. 
-
-## Approach & Efficiency
-I don't believe this provided category is relevant to this particular challenge. I welcome comments to the contrary if they can be reasonably supported. 
-
-## API
-### Stack Methods:
-- ```peek()```:
-  - This method takes no parameters and returns the node at the top position of the stack if one exists. It does not mutate the stack. 
-- ```pop()```:
-  - This method takes no parameters. It removes the top node from the stack and then returns it. That order of operations is critical for garbage collection.
-- ```push(<value>)```: 
-  - This method takes a value as a parameter, instantiates a node with that value, and then places that node onto the top position of the stack. It returns undefined. 
-- ```isEmpty()```:
-  - This method takes no parameters and returns a boolean value representing whether or not the stack contains any nodes. 
-
-### Queue Methods
-- ```enqueue(<value>)```:
-  - This method takes a value as a parameter, instantiates a node with that value, and then places that node at the rear of the queue. In the case of an empty queue the front property will also be pointed to the newly instantiated node. 
-- ```dequeue()```:
-  - This method takes no parameters. It removes the node at the front position of the queue and returns it. 
-- ```peek()```:
-  - This method takes no parameters. It returns the node at the front position of the queue without removing it from the queue. 
-- ```isEmpty()```:
-  - This method takes no parameters and returns a boolean representing if the queue contains any nodes. 
