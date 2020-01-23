@@ -9,6 +9,7 @@
 ## [Array Binary Search](#Binary-Search-Array)
 ## [Linked List](#Linked-List)
 ## [Stacks and Queues](#Stacks-and-Queues)
+
 # Reverse Array
 
 ## Teammate

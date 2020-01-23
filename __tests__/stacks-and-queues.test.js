@@ -1,6 +1,6 @@
 'use strict';
 
-const {Stack, Queue} = require('./stacks-and-queues.js');
+const {Stack, Queue} = require('../challenges/stacks-and-queues/stacks-and-queues.js');
 const stack = new Stack;
 const queue = new Queue;
 
