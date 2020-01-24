@@ -19,5 +19,18 @@ class LinkedList {
     }
     current.next = node;
   }
+  insertBefore(value, newVal){
+    const node = new Node(newVal);
+    let current = this.head;
+    if(value === current){
+      node.next = this.head;
+      this.head = node;
+    }
+    while(current.next.value !== value){
+      current = current.next;
+    }
+    node.next = current.next;
+    current.next = node;
+  }
 }
 
