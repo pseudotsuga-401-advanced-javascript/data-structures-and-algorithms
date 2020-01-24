@@ -35,7 +35,11 @@ class LinkedList {
   insertAfter(targetValue, newVal){
     const node = new Node(newVal);
     let current = this.head;
-    while(current.value !==)
+    while(current.value !== targetValue){
+      current = current.next;
+    }
+    node.next = current.next;
+    current.next = node;
   }
 }
 
