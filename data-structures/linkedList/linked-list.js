@@ -22,7 +22,7 @@ class LinkedList {
   insertBefore(targetValue, newVal){
     const node = new Node(newVal);
     let current = this.head;
-    if(targetValue === current){
+    if(targetValue === current.value){
       node.next = this.head;
       this.head = node;
     }
@@ -43,3 +43,4 @@ class LinkedList {
   }
 }
 
+module.exports = {Node: Node, LinkedList: LinkedList};
