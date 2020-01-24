@@ -11,6 +11,7 @@ class LinkedList {
   constructor(head = null){
     this.head = head;
   }
+
   append(value){
     const node = new Node(value);
     let current = this.head;
@@ -19,6 +20,7 @@ class LinkedList {
     }
     current.next = node;
   }
+
   insertBefore(targetValue, newVal){
     const node = new Node(newVal);
     let current = this.head;
@@ -26,12 +28,15 @@ class LinkedList {
       node.next = this.head;
       this.head = node;
     }
-    while(current.next.value !== targetValue){
-      current = current.next;
+    else {
+      while(current.next.value !== targetValue){
+        current = current.next;
+      }
     }
     node.next = current.next;
     current.next = node;
   }
+
   insertAfter(targetValue, newVal){
     const node = new Node(newVal);
     let current = this.head;
@@ -41,6 +46,7 @@ class LinkedList {
     node.next = current.next;
     current.next = node;
   }
+
 }
 
 module.exports = {Node: Node, LinkedList: LinkedList};

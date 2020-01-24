@@ -23,9 +23,8 @@ describe('Tests for linked lists', () => {
     linkedList.insertBefore(3, 5);
     expect(linkedList.head.next.next.value).toBe(5);
   });
-  xtest('can successfully insert a node before the first node of a linked list', () => {
+  test('can successfully insert a node before the first node of a linked list', () => {
     let linkedList = new LinkedList(new Node(1));
-    linkedList.append(2);
     linkedList.insertBefore(1, 10);
     expect(linkedList.head.value).toBe(10);
   });
