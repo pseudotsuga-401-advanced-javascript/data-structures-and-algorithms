@@ -8,6 +8,7 @@
 ## [Array Shift](#Shift-Array)
 ## [Array Binary Search](#Binary-Search-Array)
 ## [Linked List](#Linked-List)
+## [Linked List Insertions](https://github.com/pseudotsuga-401-advanced-javascript/data-structures-and-algorithms/blob/ll-insertions/data-structures/linkedList/README.md) 
 ## [Stacks and Queues](#Stacks-and-Queues)
 
 # Reverse Array
